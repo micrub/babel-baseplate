@@ -6,6 +6,10 @@
     },
     "devDependencies": {
         "babel-cli": "^6.26.0",
+        "babel-plugin-syntax-trailing-function-commas": "^6.22.0",
+        "babel-plugin-transform-async-to-generator": "^6.24.1",
+        "babel-plugin-transform-decorators": "^6.24.1",
+        "babel-plugin-transform-object-rest-spread": "^6.26.0",
         "babel-plugin-transform-runtime": "^6.23.0",
         "babel-preset-env": "^1.6.0",
         "chai": "^4.1.1",
@@ -22,14 +26,15 @@
     "main": "src/index.js",
     "name": "babel-baseplate",
     "scripts": {
-        "prebuild"   : "npm run test # also runs npm run pretest",
-        "prepublish" : "npm run build # also runs npm run prebuild",
-        "build"      : "echo *RUN BUILD*",
-        "lint"       : "$(npm bin)/eslint src test",
-        "start"      : "echo *START DEVELOPMENT ALIAS*",
-        "stop"       : "echo *STOP DEVELOPMENT ALIAS*",
-        "pretest"    : "npm run lint",
-        "test"       : "$(npm bin)/mocha test/"
+        "prebuild": "npm run test # also runs npm run pretest",
+        "prepublish": "npm run build # also runs npm run prebuild",
+        "build": "echo *RUN BUILD*",
+        "lint": "$(npm bin)/eslint src test",
+        "start": "echo *START DEVELOPMENT ALIAS*",
+        "stop": "echo *STOP DEVELOPMENT ALIAS*",
+        "pretest": "npm run lint",
+        "test": "$(npm bin)/mocha test/",
+        "test:watch": "$(npm bin)/mocha --watch test/"
     },
     "version": "1.0.0"
 }
