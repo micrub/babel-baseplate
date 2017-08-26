@@ -22,8 +22,14 @@
     "main": "src/index.js",
     "name": "babel-baseplate",
     "scripts": {
-        "lint": "$(npm bin)/eslint src test",
-        "test": "$(npm bin)/mocha test/"
+        "prebuild"   : "npm run test # also runs npm run pretest",
+        "prepublish" : "npm run build # also runs npm run prebuild",
+        "build"      : "echo *RUN BUILD*",
+        "lint"       : "$(npm bin)/eslint src test",
+        "start"      : "echo *START DEVELOPMENT ALIAS*",
+        "stop"       : "echo *STOP DEVELOPMENT ALIAS*",
+        "pretest"    : "npm run lint",
+        "test"       : "$(npm bin)/mocha test/"
     },
     "version": "1.0.0"
 }
