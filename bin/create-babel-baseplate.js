@@ -9,9 +9,9 @@ const NIY = 'TBD:NIY'
 const REPO_URL = 'https://github.com/micrub/babel-baseplate.git'
 const SUCCESS_MESSAGE = 'babel-baseplate is cloned.'
 
-shell.config.silent = true
-shell.config.verbose = true
-shell.config.fatal = false
+shell.config.silent  = true
+shell.config.verbose = false
+shell.config.fatal   = false
 
 function isGitInstalled() {
   if (!shell.which('git')) {
