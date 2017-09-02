@@ -1,6 +1,6 @@
 # Basic setup for babel based development
 
-# Version 1.0.0
+# Version 1.0.2
 
 ## Install dependencies
 
@@ -31,3 +31,24 @@ and usage example in main unit test source file.
 ## ESlint
 
 `npm lint`
+
+# Creating project based on `babel-baseplate` (WIP)
+
+* Clone `babel-baseplate` repository.
+* Create `~/bin/` if not exist.
+* From repository's directory execute `./bin/create-link.js`
+* Reload shell environment
+* From any directory execute following to clone 'babel-baseplate` master and
+  add `babel-baseplate` as `upstream` remote.
+  * Accepts only absolute non existin path as target for cloning.
+
+```
+create-babel-baseplate-script.sh $(pwd)/glpl
+```
+
+# Scaffolding (WIP)
+
+`
+tools/generator.js
+tools/gen.js
+`
