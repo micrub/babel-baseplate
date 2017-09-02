@@ -1,6 +1,7 @@
 {
     "author": "Michael Rubanov <mrubanov@gmail.com>",
     "dependencies": {
+        "async": "^2.5.0",
         "babel-runtime": "^6.26.0",
         "debug": "^3.0.1"
     },
@@ -19,8 +20,11 @@
         "eslint-plugin-node": "^5.1.1",
         "eslint-plugin-promise": "^3.5.0",
         "eslint-plugin-standard": "^3.0.1",
+        "inquirer": "^3.2.2",
         "mocha": "^3.5.0",
-        "mocha-steps": "^1.1.0"
+        "mocha-steps": "^1.1.0",
+        "shelljs": "^0.7.8",
+        "yargs": "^8.0.2"
     },
     "license": "MIT",
     "main": "src/index.js",
