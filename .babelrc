@@ -9,7 +9,7 @@
         [
             "env",
             {
-                "debug": true,
+                "debug": false,
                 "loose": false,
                 "modules": "commonjs",
                 "spec": false,
