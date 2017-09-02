@@ -40,5 +40,5 @@
         "test": "$(npm bin)/mocha test/",
         "test:watch": "$(npm bin)/mocha --watch test/"
     },
-    "version": "1.0.1"
+    "version": "1.0.2"
 }
